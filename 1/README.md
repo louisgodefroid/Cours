@@ -1,6 +1,6 @@
 Programmation 1 :
 - variables
-- pointeurs
+- pointeurs / tableaux
 - fonctions
 
 Programmation 2 :
@@ -8,6 +8,7 @@ Programmation 2 :
 - pile
 - tas
 - malloc
+- overflow
 
 Concepts :
 - compilation
