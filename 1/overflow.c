@@ -3,18 +3,21 @@
 #include <stdio.h>
 #include <stdint.h>
 
+void fill_variable(int *var)
+{
+  long tmp = 2;
+  *var = tmp;
+}
+
 int main(void)
 {
-  int a = 2;
-  unsigned int b = 0;
+  int a = 1;
+  int b = 0;
   printf("(int) a: %d\n", a);
   printf("(int) b: %u\n", b);
   printf("(long) a: %ld\n", a);
   printf("(long) b: %lu\n", b);
-  b = UINT32_MAX;
-  printf("(int) a: %d\n", a);
-  printf("(int) b: %u\n", b);
-  b++;
+  fill_variable(&b);
   printf("(int) a: %d\n", a);
   printf("(int) b: %u\n", b);
   return 0;
